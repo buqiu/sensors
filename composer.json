@@ -1,0 +1,20 @@
+{
+    "name": "buqiu/sensors",
+    "description": "上报神策数据",
+    "require": {
+        "sensorsdata/sa-sdk-php": "v2.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Buqiu\\Sensors\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "caoruidong",
+            "email": "977520990@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

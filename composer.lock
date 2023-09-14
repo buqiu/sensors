@@ -1,0 +1,54 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b7863193e9c0a6f8ee34eef361b1f7ae",
+    "packages": [
+        {
+            "name": "sensorsdata/sa-sdk-php",
+            "version": "v2.0.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/sensorsdata/sa-sdk-php/v2.0.3/sensorsdata-sa-sdk-php-v2.0.3.zip",
+                "reference": "63711dede361c81a7ef5e0769d71eb0065e5a6c8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "SensorsAnalytics.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fu Lili",
+                    "email": "fulili@sensorsdata.cn"
+                }
+            ],
+            "description": "PHP SDK for Sensors Analytics",
+            "homepage": "http://sensorsdata.cn",
+            "keywords": [
+                "sdk",
+                "sensorsdata"
+            ],
+            "time": "2023-04-20T08:01:09+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
