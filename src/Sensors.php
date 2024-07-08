@@ -84,20 +84,22 @@ class Sensors
     public function getIdentityList(array $identityList): array
     {
         foreach ($identityList as $key => $value) {
-            switch ($key) {
-                case 'user_uuid':
-                    $this->identityList['$identity_login_id'] = $value;
-                    break;
-                case 'identity_mp_unionid':
-                    $this->identityList['$identity_mp_unionid'] = $value;
-                    break;
-                case 'identity_cookie_uuid':
-                    $this->identityList['$identity_cookie_id'] = $value;
-                    break;
-                default:
-                    // 如果不是上述三个键，则直接设置到 $this->identityList
-                    $this->identityList[$key] = $value;
-                    break;
+            if (!empty($value)) {
+                switch ($key) {
+                    case 'user_uuid':
+                        $this->identityList['$identity_login_id'] = $value;
+                        break;
+                    case 'identity_mp_unionid':
+                        $this->identityList['$identity_mp_unionid'] = $value;
+                        break;
+                    case 'identity_cookie_uuid':
+                        $this->identityList['$identity_cookie_id'] = $value;
+                        break;
+                    default:
+                        // 如果不是上述三个键，则直接设置到 $this->identityList
+                        $this->identityList[$key] = $value;
+                        break;
+                }
             }
         }
         return $this->identityList;
